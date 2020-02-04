@@ -5,6 +5,7 @@ import About from './About'
 import Shop from './Shop'
 import Nav from './Nav'
 import Home from './Home'
+import Venue from './Venue'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about' exact component={About} />
           <Route path='/shop' exact component={Shop} />
+          <Route path='/shop/:id' exact component={Venue} />
         </Switch>
       </div>
     </Router>
